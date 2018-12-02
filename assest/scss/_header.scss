@@ -1,0 +1,418 @@
+$font-regular: rgb(3, 68, 136);
+$transition-def: 0.2s linear;
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    background: #f1f4f8;
+    position: relative;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.gipfel__header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    .col-md-3 {
+        & > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+    }
+}
+
+.gipfel__header--main {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+.header__countries--more {
+    position: absolute;
+    top: calc(100% + 6px);
+    display: none;
+    transition: $transition-def;
+    z-index: 3;
+    ul { 
+        margin: 0;
+        padding: 0;
+        li {
+            list-style-type: none;
+            height: 40px;
+            width: 184px;
+            @extend .d-flex;
+            padding-left: 1.25rem;
+            background: #f1f4f8;
+            transition: $transition-def;
+            a {            
+                color: $font-regular;
+                font-size: 14px;
+                transition: $transition-def;
+                font-family: "Proxima Nova Rg";
+            }
+            &:hover {
+                cursor: pointer;
+                background: $font-regular;
+                a {
+                    color: #fefefe;
+                }
+            }
+        }
+    }
+}
+
+.header__countries {
+    position: relative;
+    a {
+        color: $font-regular;
+        font-size: 14px;
+        line-height: 1;
+        @extend .d-flex;
+        font-family: "Proxima Nova Rg";
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    span.icon-country {
+        font-size: 20px;
+        margin-right: 0.5rem;
+    }
+    span.icon-arrow {
+        font-size: 10px;
+        margin-left: 0.25rem;
+        transition: $transition-def;
+    }
+
+    &:before {
+        content:'';
+        display: block;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 6px;
+        background: #transparent;
+    }
+    &:hover {
+        .header__countries--more {
+            display: block;
+        }
+        span.icon-arrow {
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+
+.b-email {
+    a {
+        color: $font-regular;
+        font-size: 14px;
+        line-height: 1;
+        @extend .d-flex;
+        font-family: "Proxima Nova Rg";
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    span.icon-mail {
+        font-size: 18px;
+        margin-right: 0.5rem;
+    }
+}
+
+.search-form {
+    position: relative;
+    input {
+        border-radius: 15px;
+        border: none;
+        width: 100%;
+        background: rgba(66, 79, 96, 0.5);
+        height: 30px;
+        padding: 0 6rem 0 1.5rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: "Proxima Nova Rg";
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            font-family: "Proxima Nova Rg";
+        }
+    }
+    .search-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1.5rem;
+        a {
+            font-size: 14px;
+            color: #fff;
+            @extend .d-flex;
+            font-family: "Proxima Nova Rg";
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        span.icon-search {
+            font-size: 20px;
+            margin-right: 0.4rem;
+            &:before {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
+}
+
+.b-login {
+    @extend .d-flex;
+    width: 50%;
+    justify-content: center;
+    a {
+        font-size: 14px;
+        @extend .d-flex;
+        color: $font-regular;
+        font-family: "Proxima Nova Rg";
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    span.icon-login {
+        font-size: 20px;
+        margin-right: 0.5rem;
+        margin-top: -2px;
+    }
+}
+
+.b-profile {
+    @extend .d-flex;
+    cursor: pointer;
+    display: none;
+    &-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+    }
+    &-info {
+        font-size: 14px;
+        color: $font-regular;
+        font-family: "Proxima Nova Rg";
+        span.icon-arrow {
+            font-size: 10px;
+            margin-left: 0.25rem;
+            transition: $transition-def;
+        }
+    }
+    &:hover {
+        .b-profile-info {
+            span.icon-arrow {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}
+
+.b-basket {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    span.icon-cart {
+        position: relative;
+        font-size: 24px;
+        margin-right: 1rem;
+    }
+    a {
+        font-size: 14px;
+        font-family: "Proxima Nova Rg";
+        color: $font-regular;
+        @extend .d-flex;
+    }
+}
+
+span.backet-item {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    font-family: "Proxima Nova Rg";
+    border-radius: 50%;
+    background: $font-regular;
+    color: #fefefe;
+    @extend .d-flex;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.gipfel-nav {
+    position: relative;
+    background: $font-regular;
+    .container > ul {
+        padding: 0;
+        height: 90px;
+        @extend .d-flex;
+        margin: 0;
+        justify-content: space-between;
+        & > li {
+            list-style-type: none;
+            height: 100%;
+            @extend .d-flex;
+            background: transparent;
+            & > a {
+                height: 100%;
+                @extend .d-flex;
+                transition: 0.2s linear;
+                &:hover {
+                    background: #0453a5;
+                }
+            }
+        }
+    }
+}
+
+.gnav-item {
+    transition: $transition-def;
+    & > a {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 17px;
+        font-weight: 600;
+        padding: 0 1rem;
+        position: relative;
+    }
+    span.icon-arrow {
+        font-size: 10px;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: $transition-def;
+        &:before {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    &:hover {
+        background: rgb(0, 44, 114);
+        span.icon-arrow {
+            opacity: 1;
+        }
+        .gipfel-submenu {
+            display: block;
+        }
+    }
+}
+
+.gnav-logo {
+    margin-left: 10px;
+    a {
+        &:hover {
+            background: $font-regular!important;
+        }
+    }
+}
+
+.gipfel-submenu {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background: #f9fafb;
+    display: none;
+    z-index: 13;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.submenu-block {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.submenu-item {
+    padding: 0 1rem;
+    max-width: 245px;
+    &--more {
+        border-right: 1px solid rgba(206, 209, 212, 0.4);
+    }
+}
+
+.submenu-item-logo {
+    height: 130px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.submenu-item-heading {
+    h3 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        a {
+            font-size: 18px;
+            color: $font-regular;
+            &:hover {
+                color: $font-regular;
+            }
+        }
+    }
+}
+.submenu-item-body {
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            list-style-type: none;
+            line-height: 30px;
+            a {
+                font-size: 14px;
+                color: $font-regular;
+                margin-left: -0.5rem;
+                transition: $transition-def;
+                font-family: "Proxima Nova Rg";
+                span.icon-arrow-right {
+                    font-size: 9px;
+                    margin-right: 0.25rem;
+                    transition: $transition-def;
+                    opacity: 0;
+                    z-index: -1;
+                    position: relative;
+                    top: -1.5px;
+                }
+                &:hover {
+                    margin-left: 0;
+                    font-weight: 600;
+                    span.icon-arrow-right {
+                        opacity: 1;
+                        z-index: 1;
+                    }  
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

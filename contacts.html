@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--    <meta name="viewport" content="width=1200, initial-scale=no">-->
+    <!-- Bootstrap CSS -->
+
+    <link rel='stylesheet' id='layerslider-css' href='https://psa.afonico-test.ru/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='https://psa.afonico-test.ru/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css-css' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='swiper-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fontawesome-css-css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='nice-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fancybox-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='nice-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='jscrollpane-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.1.2/style/jquery.jscrollpane.min.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assest/css/core.css">
+    <link rel="stylesheet" href="assest/css/_additional.css">
+    <title>Gipfel</title>
+</head>
+
+<body>
+    <div class="gipfel">
+        <header>
+            <div class="gipfel__header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="header__countem">
+                                <div class="header__countries"><a href="#"><span class="icon-country"></span>Россия<span class="icon-arrow"></span></a>
+                                    <div class="header__countries--more">
+                                        <ul>
+                                            <li><a href="#">Казахстан</a></li>
+                                            <li><a href="#">Украина</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="b-email"><a href="#"><span class="icon-mail"></span>info@gipfel.ru</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="search-form">
+                                <input type="search" placeholder="Поиск товаров на сайте..." aria-label="Search">
+                                <div class="search-button">
+                                    <a href="#"><span class="icon-search"></span><span class="remove-text">Найти</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>
+                                <div class="b-telephone deskHide">
+                                    <a href="tel: +74952221515"><span class="icon-phone"></span>8 (495) 222-15-15</a>
+                                    <a href="tel: +78007003488">8 (800) 700-34-88</a>
+                                </div>
+                                <div class="b-login">
+                                    <a href="#"><span class="icon-login"></span><span class="remove-text">Войти</span></a>
+                                </div>
+                                <div class="b-profile">
+                                    <div class="b-profile-img">
+                                        <img src="assest/img/img.png" alt="#">
+                                    </div>
+                                    <div class="b-profile-info">
+                                        <span class="remove-text">Алексей</span><span class="icon-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="b-basket">
+                                    <a href="#"><span class="icon-cart">
+                                            <span class="backet-item">0</span></span><span class="remove-text">Корзина</span>
+                                    </a>
+
+                                    <div class="sub-basket mobHide active">
+                                        <div data-brackets-id="59397" class="page-header">
+                                            <h1 data-brackets-id="59398">Корзина заказа <span>3</span></h1>
+                                            <div data-brackets-id="59399" class="basket__option--more">
+                                                <div data-brackets-id="59403" class="basket-clear">
+                                                    <a data-brackets-id="59404" href="#"><span data-brackets-id="59405" class="icon-trash"></span>Очистить корзину</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-brackets-id="58590" class="goods-in-basket">
+                                            <table data-brackets-id="58592" class="table">
+                                                <thead data-brackets-id="58593">
+                                                    <tr data-brackets-id="58594">
+                                                        <th data-brackets-id="58595" scope="col">Товар</th>
+                                                        <th data-brackets-id="58596" scope="col">Скидка</th>
+                                                        <th data-brackets-id="58597" scope="col">Количество</th>
+                                                        <th data-brackets-id="58598" scope="col">Сумма</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody data-brackets-id="58599">
+                                                    <tr data-brackets-id="58600">
+                                                        <td data-brackets-id="58601">
+                                                            <div data-brackets-id="58602" class="bgood-info">
+                                                                <div data-brackets-id="58603" class="bgood-img">
+                                                                    <img data-brackets-id="58604" src="assest/img/good1.png" alt="#">
+                                                                </div>
+                                                                <div data-brackets-id="58605" class="bgood-text">
+                                                                    <p data-brackets-id="58606"><a data-brackets-id="58607" href="#">Набор посуды ERA 6 пр. Gipfel 1510</a></p>
+                                                                    <div data-brackets-id="58608">
+                                                                        <a data-brackets-id="58609" href="#">Отложить</a>
+                                                                        <a data-brackets-id="58610" href="#">Убрать из корзины</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td data-brackets-id="58611">
+                                                            <div data-brackets-id="58612" class="bgood-discount">
+                                                                <p data-brackets-id="58613" class="mobHide">2%</p>
+                                                                <p data-brackets-id="58614" class="deskHide">Скидка 2%</p>
+                                                            </div>
+                                                        </td>
+                                                        <td data-brackets-id="58615">
+                                                            <div data-brackets-id="58616" class="bgood-amount">
+                                                                <input data-brackets-id="58617" type="number" id="bgood1" value="1">
+                                                                <label data-brackets-id="58618" for="#bgood1">шт</label>
+                                                                <button data-brackets-id="58619" class="bgood-add"><span data-brackets-id="58620" class="icon-add"></span></button>
+                                                                <button data-brackets-id="58621" class="bgood-minus"><span data-brackets-id="58622" class="icon-minus"></span></button>
+                                                            </div>
+                                                        </td>
+                                                        <td data-brackets-id="58623">
+                                                            <div data-brackets-id="58624" class="bgood-price">
+                                                                <p data-brackets-id="58625">11 218 <span data-brackets-id="58626">₽</span></p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-brackets-id="58627">
+                                                        <td data-brackets-id="58628">
+                                                            <div data-brackets-id="58629" class="bgood-info">
+                                                                <div data-brackets-id="58630" class="bgood-img">
+                                                                    <img data-brackets-id="58631" src="assest/img/good1.png" alt="#">
+                                                                </div>
+                                                                <div data-brackets-id="58632" class="bgood-text">
+                                                                    <p data-brackets-id="58633"><a data-brackets-id="58634" href="#">Набор посуды ERA 6 пр. Gipfel 1510</a></p>
+                                                                    <div data-brackets-id="58635">
+                                                                        <a data-brackets-id="58636" href="#">Отложить</a>
+                                                                        <a data-brackets-id="58637" href="#">Убрать из корзины</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td data-brackets-id="58638">
+                                                            <div data-brackets-id="58639" class="bgood-discount">
+                                                                <p data-brackets-id="58640" class="mobHide">2%</p>
+                                                                <p data-brackets-id="58641" class="deskHide">Скидка 2%</p>
+                                                            </div>
+                                                        </td>
+                                                        <td data-brackets-id="58642">
+                                                            <div data-brackets-id="58643" class="bgood-amount">
+                                                                <input data-brackets-id="58644" type="number" id="bgood2" value="1">
+                                                                <label data-brackets-id="58645" for="#bgood2">шт</label>
+                                                                <button data-brackets-id="58646" class="bgood-add"><span data-brackets-id="58647" class="icon-add"></span></button>
+                                                                <button data-brackets-id="58648" class="bgood-minus"><span data-brackets-id="58649" class="icon-minus"></span></button>
+                                                            </div>
+                                                        </td>
+                                                        <td data-brackets-id="58650">
+                                                            <div data-brackets-id="58651" class="bgood-price">
+                                                                <p data-brackets-id="58652">11 218 <span data-brackets-id="58653">₽</span></p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-brackets-id="58654">
+                                                        <td data-brackets-id="58655">
+                                                            <div data-brackets-id="58656" class="bgood-info">
+                                                                <div data-brackets-id="58657" class="bgood-img">
+                                                                    <img data-brackets-id="58658" src="assest/img/good1.png" alt="#">
+                                                                </div>
+                                                                <div data-brackets-id="58659" class="bgood-text">
+                                                                    <p data-brackets-id="58660"><a data-brackets-id="58661" href="#">Набор посуды ERA 6 пр. Gipfel 1510</a></p>
+                                                                    <div data-brackets-id="58662">
+                                                                        <a data-brackets-id="58663" href="#">Отложить</a>
+                                                                        <a data-brackets-id="58664" href="#">Убрать из корзины</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td data-brackets-id="58665">
+                                                            <div data-brackets-id="58666" class="bgood-discount">
+                                                                <p data-brackets-id="58667" class="mobHide">2%</p>
+                                                                <p data-brackets-id="58668" class="deskHide">Скидка 2%</p>
+                                                            </div>
+                                                        </td>
+                                                        <td data-brackets-id="58669">
+                                                            <div data-brackets-id="58670" class="bgood-amount">
+                                                                <input data-brackets-id="58671" type="number" id="bgood3" value="1">
+                                                                <label data-brackets-id="58672" for="#bgood3">шт</label>
+                                                                <button data-brackets-id="58673" class="bgood-add"><span data-brackets-id="58674" class="icon-add"></span></button>
+                                                                <button data-brackets-id="58675" class="bgood-minus"><span data-brackets-id="58676" class="icon-minus"></span></button>
+                                                            </div>
+                                                        </td>
+                                                        <td data-brackets-id="58677">
+                                                            <div data-brackets-id="58678" class="bgood-price">
+                                                                <p data-brackets-id="58679">11 218 <span data-brackets-id="58680">₽</span></p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div data-brackets-id="62210" class="goods-total">
+                                            <div data-brackets-id="62215">
+                                                <p data-brackets-id="62216">Всего товаров: <span data-brackets-id="62217">3</span></p>
+                                                <p data-brackets-id="62218" class="goods-price">
+                                                    26 669<span data-brackets-id="62219">₽</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div data-brackets-id="62220" class="goods-buy">
+                                            <a data-brackets-id="62221" href="#" class="bbuy-ordering deskHide">Перейти к оформлению заказа<span data-brackets-id="62222" class="icon-arrow"></span></a>
+                                            <a data-brackets-id="67801" class="bbuy-gobasket mobHide">Перейти в корзину<span data-brackets-id="67802" class="icon-arrow-right"></span></a>
+                                            <a data-brackets-id="62224" class="bbuy-onclick mobHide">Купить в 1 клик<span data-brackets-id="62225" class="icon-arrow-right"></span></a>
+                                            <a data-brackets-id="62223" class="bbuy-continue">Продолжить покупки</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="sub-basket-empty mobHide">
+                                        <div data-brackets-id="59397" class="page-header">
+                                            <h1 data-brackets-id="59398">Ваша корзина пуста</h1>
+                                            <span class="icon-cart"></span>
+                                        </div>
+                                        <p><span>Исправить это недоразумение очень просто:</span> выберите в каталоге интересующий товар и положите его в корзину.</p>
+                                        <a href="#" class="gocatalog">Перейти в каталог<span data-brackets-id="59525" class="icon-arrow-right"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <button class="menu-toggler deskHide">
+                    <span class="icon-no"></span>
+                    <span class="icon-menu active"></span>
+                </button>
+                <div class="gipfel-logo deskHide">
+                    <a href="http://gipfel2.afonico-test.ru"><img src="assest/img/gip-logo.png" alt="logo-gipfel"></a>
+                </div>
+                <div class="gipfel-nav">
+                    <div class="container">
+                        <ul>
+                            <li class="gnav-item">
+                                <a href="#">Новинки</a>
+                            </li>
+                            <li class="gnav-item">
+                                <a href="#">Наборы
+                                    <span class="icon-arrow"></span></a>
+                                <div class="gipfel-submenu">
+                                    <div class="gipfel-submenu-nav deskHide">
+                                        <a href="#"><span class="icon-arrow"></span>Назад</a>
+                                        <p>Посуда приготовления</p>
+                                    </div>
+                                    <div class="container">
+                                        <div class="submenu-block">
+                                            <div class="submenu-item submenu-item--more">
+                                                <div class="submenu-item-logo">
+                                                    <img src="assest/img/1.png" alt="">
+                                                </div>
+                                                <div class="submenu-item-heading">
+                                                    <h3><a href="#">Кастрюли и ковши<span class="icon-arrow deskHide"></span></a></h3>
+                                                </div>
+                                                <div class="submenu-item-body">
+                                                    <ul>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Кастрюли</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Ковши</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Миски и салатники</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Наборы кастрюль</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Пароварки и скороварки</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="submenu-item submenu-item--more">
+                                                <div class="submenu-item-logo">
+                                                    <img src="assest/img/2.png" alt="">
+                                                </div>
+                                                <div class="submenu-item-heading">
+                                                    <h3><a href="#">Сковороды и сотейники<span class="icon-arrow deskHide"></span></a></h3>
+                                                </div>
+                                                <div class="submenu-item-body">
+                                                    <ul>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Набор сковород</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Сковороды блинные</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Сковороды вок</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Сковороды из алюминия</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Сковороды из нержавеющей стали</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Сковороды чугунные</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Сковороды-гриль</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Сотейники</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="submenu-item submenu-item--more">
+                                                <div class="submenu-item-logo">
+                                                    <img src="assest/img/3.png" alt="">
+                                                </div>
+                                                <div class="submenu-item-heading">
+                                                    <h3><a href="#">Посуда для запекания<span class="icon-arrow deskHide"></span></a></h3>
+                                                </div>
+                                                <div class="submenu-item-body">
+                                                    <ul>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Жаровни и противни</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Фондю</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Формы для выпечки</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Чугунная посуда</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Наборы для барбекю</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="submenu-item submenu-item--more">
+                                                <div class="submenu-item-logo">
+                                                    <img src="assest/img/4.png" alt="">
+                                                </div>
+                                                <div class="submenu-item-heading">
+                                                    <h3><a href="#">Посуда для чая и кофе<span class="icon-arrow deskHide"></span></a></h3>
+                                                </div>
+                                                <div class="submenu-item-body">
+                                                    <ul>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Кофемолки</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Аксессуары</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Заварочные чайники</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Кофеварки и турки</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Френч прессы</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Чайники для кипячения</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Электрические чайники</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="submenu-item">
+                                                <div class="submenu-item-logo">
+                                                    <img src="assest/img/5.png" alt="">
+                                                </div>
+                                                <div class="submenu-item-heading">
+                                                    <h3><a href="#">Крышки для посуды<span class="icon-arrow deskHide"></span></a></h3>
+                                                </div>
+                                                <div class="submenu-item-body">
+                                                    <ul>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Крышки стеклянные</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Крышки чугунные</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Крышки силиконовые</a></li>
+                                                        <li><a href="#"><span class="icon-arrow-right"></span>Крышки фарфоровые</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="gnav-item">
+                                <a href="#">Приготовление
+                                    <span class="icon-arrow"></span></a>
+                            </li>
+                            <li class="gnav-item"><a href="#">Хранение<span class="icon-arrow"></span></a>
+                            </li>
+                            <li class="gnav-logo mobHide"><a href=""><img src="assest/img/gip-logo.png" alt="logo-gipfel"></a></li>
+                            <li class="gnav-item"><a href="#">Для кухни<span class="icon-arrow"></span>
+                                </a>
+                            </li>
+                            <li class="gnav-item"><a href="#">Сервировка стола<span class="icon-arrow"></span></a>
+                            </li>
+                            <li class="gnav-item"><a href="#">Акции<span class="icon-arrow"></span></a>
+                            </li>
+                            <li class="gnav-item"><a href="#">Подарки<span class="icon-arrow"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <main>
+            <div class="gipfel__contacts contacts">
+                <div class="container">
+                    <div class="nav-page">
+                        <nav>
+                            <a href="#">Главная</a>
+                            <span class="icon-arrow-right"></span>
+                            <a href="#" class="btn btn-default disabled" role="button" aria-disabled="true">Корзина</a>
+                        </nav>
+                    </div>
+
+                    <div class="container">
+                        <div class="page-block">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="page-header">
+                                            <h1>Контакты</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="flex">
+                                        <div class="contacts_left">
+                                            <div class="store_description">
+
+                                                <div class="store_property">
+                                                    <script type="text/javascript" src="//vk.com/js/api/openapi.js?150"></script>
+
+                                                    <!-- VK Widget -->
+                                                    <div id="vk_groups"></div>
+                                                    <script type="text/javascript">
+                                                        VK.Widgets.Group("vk_groups", {
+                                                            mode: 3,
+                                                            width: 'auto'
+                                                        }, 54260214);
+
+                                                    </script>
+                                                </div>
+                                                <div class="store_property">
+                                                    <div class="fb-page" data-href="https://www.facebook.com/gipfel.ru/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                                        <blockquote cite="https://www.facebook.com/gipfel.ru/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/gipfel.ru/">Gipfel</a></blockquote>
+                                                    </div>
+                                                </div>
+                                                <div class="store_property">
+                                                    <div id="ok_group_widget"></div>
+                                                    <script>
+                                                        ! function(d, id, did, st) {
+                                                            var js = d.createElement("script");
+                                                            js.src = "https://connect.ok.ru/connect.js";
+                                                            js.onload = js.onreadystatechange = function() {
+                                                                if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                                                                    if (!this.executed) {
+                                                                        this.executed = true;
+                                                                        setTimeout(function() {
+                                                                            OK.CONNECT.insertGroupWidget(id, did, st);
+                                                                        }, 0);
+                                                                    }
+                                                                }
+                                                            }
+                                                            d.documentElement.appendChild(js);
+                                                        }(document, "ok_group_widget", "54876916547597", '{"width":270,"height":335}');
+
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="contacts_right">
+                                            <div class="contacts_map">
+                                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae1cff4847625f3ffa3fcaf8cbda6c925455d1b17ab8ab19cb1166ea8efb2a717&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                                            </div>
+                                            <div class="fourb">
+                                                <div class="store_property">
+                                                    <span class="icon-map"></span>
+                                                    <div class="title">Адрес</div>
+                                                    <div class="value">
+                                                        119048, Российская Федерация, г. Москва, ул. Ефремова, д.23, помещение 3, комната 4 </div>
+                                                </div>
+                                                <div class="store_property">
+                                                    <span class="icon-phone"></span>
+                                                    <div class="title">Телефон</div>
+                                                    <div class="value">
+                                                        <a href="tel:+7(495)222-15-15" rel="nofollow">8 (495) 222-15-15</a>
+                                                        <a href="tel:+7(800)700-34-88" rel="nofollow">8 (800) 700-34-88</a> </div>
+                                                </div>
+                                                <div class="store_property">
+                                                    <span class="icon-mail"></span>
+                                                    <div class="title">Email</div>
+                                                    <div class="value">
+                                                        <a rel="nofollow" href="mailto:info@gipfel.ru">info@gipfel.ru</a> </div>
+                                                </div>
+                                                <div class="store_property">
+                                                    <span class="icon-time"></span>
+                                                    <div class="title">Режим работы</div>
+                                                    <div class="value">
+                                                        Звонки принимаются с 9:00 до 21:00 ежедневно;
+                                                        Доставка ПН-СБ, <span>ВС.: выходной</span> </div>
+                                                </div>
+                                            </div>
+                                            <blockquote>
+                                                <p>
+                                                    <span>ООО «Посуда Онлайн»</span>
+                                                </p>
+                                                <p>
+                                                    <span>ИНН / КПП:</span> &nbsp;7704433959/770401001
+                                                </p>
+                                                <p>
+                                                    <span>ОГРН / Дата регистрации:</span> &nbsp;1177746682442 / 10 июля 2017
+                                                </p>
+                                                <p>
+                                                    <span>Юридический адрес:</span> 119048, Российская Федерация, г. Москва, ул. Ефремова, д.23, помещение 3, комната 4
+                                                </p>
+                                            </blockquote>
+                                            
+                                               <div class="form_container">
+                                                <!-- Вывод заголовка -->
+                                                <h1>Напишите нам</h1>
+
+                                                <div class="main__content">
+
+
+                                                    <div class="vc_row wpb_row vc_row-fluid">
+                                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                                            <div class="vc_column-inner ">
+                                                                <div class="wpb_wrapper">
+
+                                                                    <form class="gipfel-form" action="">
+                                                                        <div class="input-fields">
+
+                                                                            <div>
+                                                                                <div class="gipfel-form-item">
+                                                                                    <label for="form-name">Имя*</label>
+                                                                                    <input type="text" id="form-name" required="">
+                                                                                </div>
+
+                                                                                <div class="gipfel-form-item">
+                                                                                    <label for="form-email">E-mail</label>
+                                                                                    <input type="text" id="form-email">
+                                                                                </div>
+
+                                                                                <div class="gipfel-form-item">
+                                                                                    <label for="form-tel">Телефон*</label>
+                                                                                    <input type="text" id="form-tel" required="">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div>
+                                                                                <div class="gipfel-form-item">
+                                                                                    <label for="form-text">Сообщение или вопрос нам*</label>
+                                                                                    <textarea name="form-text" id="form-text" cols="" rows=""></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="catalog-submenu gipfel-policy">
+                                                                            <label for="gipfel-policy">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных в соответствии с <a href="#">Условиями интернет-магазина Gipfel</a></label>
+                                                                        </div>
+
+
+                                                                        <button class="gipfel-send">Отправить</button>
+
+
+
+                                                                    </form>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="toTop"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-head">
+                <div class="container">
+                    <div class="fhead-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2 col-6">
+                                    <div class="footer-logo">
+                                        <img src="assest/img/footer-logo.png" alt="#">
+                                    </div>
+                                    <div class="footer-social">
+                                        <a href="#"><span class="icon-vk"></span></a>
+                                        <a href="#"><span class="icon-fb"></span></a>
+                                        <a href="#"><span class="icon-ok"></span></a>
+                                        <a href="#"><span class="icon-insta"></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <div class="footer-links">
+                                        <h4>Компания</h4>
+                                        <p><a href="#">О компании</a></p>
+                                        <p><a href="#">Новости</a></p>
+                                        <p><a href="#">Отзывы</a></p>
+                                        <p><a href="#">Контакты</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <div class="footer-links">
+                                        <h4>Информация</h4>
+                                        <p><a href="#">Акции</a></p>
+                                        <p><a href="#">Статьи</a></p>
+                                        <p><a href="#">Пользовательское соглашение</a></p>
+                                        <p><a href="#">Подарочный сертификат</a></p>
+                                        <p><a href="#">Персональные данные</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <div class="footer-links">
+                                        <h4>Помощь</h4>
+                                        <p><a href="#">Помощь</a></p>
+                                        <p><a href="#">Условия оплаты</a></p>
+                                        <p><a href="#">Условия доставки</a></p>
+                                        <p><a href="#">Возврат товара</a></p>
+                                        <p><a href="#">Гарантия на товар</a></p>
+                                        <p><a href="#">FAQ</a></p>
+                                        <p><a href="#">Личный кабинет</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <div class="footer-links">
+                                        <h4>Доставка по РФ</h4>
+                                        <p><a href="#">Курьерская служба</a></p>
+                                        <p><a href="#">СДЭК</a></p>
+                                        <p><a href="#">DALLI Service</a></p>
+                                        <p><a href="#">Наши курьеры</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <div class="footer-links">
+                                        <h4>Контакты</h4>
+                                        <p><a href="#"><span class="icon-phone"></span>8 (495) 222-15-15</a></p>
+                                        <p><a href="#"><span class="icon-phone"></span>8 (800) 700-34-88</a></p>
+                                        <p><a href="#"><span class="icon-mail"></span>info@gipfel.ru</a></p>
+                                        <p class="order-call"><a href="#">Заказать звонок</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fbody-content">
+                        <div class="container">
+                            <div class="fbody-content-info">
+                                <p>&#169; Gipfel.ru, 2018</p>
+                                <div>
+                                    <span class="icon-mastercard"><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                                    <span class="icon-maestro"><span class="path1"></span><span class="path2"></span></span>
+                                    <span class="icon-visa"><span class="path1"></span><span class="path2"></span></span>
+                                </div>
+                                <p>Created by <a href="#">Afonico M&amp;D</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-body">
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- the mousewheel plugin - optional to provide mousewheel support -->
+    <script type="text/javascript" src="assest/js/jquery.mousewheel.js"></script>
+    <!-- the jScrollPane script -->
+    <script type="text/javascript" src="assest/js/jquery.jscrollpane.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
+    <script src="assest/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/selectize.min.js"></script>
+    <script src="assest/js/script.js"></script>
+
+</body>
+
+</html>

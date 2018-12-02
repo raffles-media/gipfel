@@ -1,0 +1,427 @@
+.b-basket {
+  position: relative; }
+  .b-basket:before {
+    content: '';
+    display: none;
+    top: 100%;
+    width: 100%;
+    height: 50%;
+    background: transparent;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer; }
+  .b-basket .sub-basket {
+    position: absolute;
+    top: calc(100% + 8.5px);
+    right: 0;
+    background: #fff;
+    padding: 0 2rem 2rem 2rem;
+    width: 700px;
+    border-radius: 2px;
+    box-shadow: 0px 5px 10px 5px rgba(51, 51, 51, 0.2);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.2s linear;
+    display: none; }
+    .b-basket .sub-basket-empty {
+      position: absolute;
+      top: calc(100% + 8.5px);
+      right: 0;
+      background: #fff;
+      padding: 0 2rem 2rem 2rem;
+      width: 410px;
+      border-radius: 2px;
+      box-shadow: 0px 5px 10px 5px rgba(51, 51, 51, 0.2);
+      z-index: 0;
+      opacity: -1;
+      transition: 0.2s linear;
+      padding-bottom: 1.5rem;
+      display: none; }
+      .b-basket .sub-basket-empty .page-header {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(206, 209, 212, 0.4); }
+        .b-basket .sub-basket-empty .page-header span {
+          margin-right: 0;
+          font-size: 40px; }
+          .b-basket .sub-basket-empty .page-header span:before {
+            color: rgba(66, 79, 96, 0.5); }
+      .b-basket .sub-basket-empty p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #333333;
+        margin-bottom: 0;
+        margin: 1rem 0;
+        font-family: "Proxima Nova Lt"; }
+        .b-basket .sub-basket-empty p span {
+          font-weight: 800; }
+      .b-basket .sub-basket-empty a.gocatalog {
+        border: 1px solid #034488;
+        background: #034488;
+        color: #fff;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        font-size: 16px;
+        font-family: "Proxima Nova Rg";
+        cursor: pointer;
+        letter-spacing: 0.5px;
+        transition: 0.2s linear; }
+        .b-basket .sub-basket-empty a.gocatalog span {
+          font-size: 9px;
+          margin-left: 1rem; }
+          .b-basket .sub-basket-empty a.gocatalog span:before {
+            color: #fff; }
+        .b-basket .sub-basket-empty a.gocatalog:hover {
+          color: #034488;
+          background: #fff;
+          border: 1px solid rgba(3, 68, 136, 0.5); }
+          .b-basket .sub-basket-empty a.gocatalog:hover span:before {
+            color: #034488; }
+    .b-basket .sub-basket.active {
+      display: block; }
+  .b-basket .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem; }
+    .b-basket .page-header h1 span {
+      color: rgba(3, 68, 136, 0.3); }
+  .b-basket .goods-in-basket {
+    margin-left: 0;
+    margin-right: 0; }
+    .b-basket .goods-in-basket .table td {
+      height: auto; }
+    .b-basket .goods-in-basket .table th, .b-basket .goods-in-basket .table td {
+      padding: 0.75rem 0; }
+  .b-basket .bgood-text {
+    height: 70px; }
+    .b-basket .bgood-text p {
+      margin-bottom: 0; }
+    .b-basket .bgood-text > div a {
+      margin-bottom: 0.25rem; }
+  .b-basket .bgood-amount {
+    width: 80%; }
+    .b-basket .bgood-amount input {
+      width: 100%; }
+  .b-basket .goods-total {
+    justify-content: flex-end;
+    margin-left: 0;
+    padding: 0.75rem 0; }
+  .b-basket .goods-buy {
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-column-gap: 2%; }
+    .b-basket .goods-buy a {
+      width: 100%; }
+      .b-basket .goods-buy a.bbuy-gobasket {
+        border: 1px solid #034488;
+        background: #034488;
+        color: #fff;
+        transition: 0.2s linear; }
+        .b-basket .goods-buy a.bbuy-gobasket:hover {
+          color: #034488;
+          background: #fff;
+          border: 1px solid rgba(3, 68, 136, 0.5); }
+          .b-basket .goods-buy a.bbuy-gobasket:hover span:before {
+            color: #034488; }
+      .b-basket .goods-buy a.bbuy-onclick {
+        border: 1px solid rgba(3, 68, 136, 0.5);
+        background: #fff;
+        color: #034488; }
+        .b-basket .goods-buy a.bbuy-onclick span:before {
+          color: #034488; }
+        .b-basket .goods-buy a.bbuy-onclick:hover {
+          color: #fff;
+          background: #034488;
+          border: 1px solid #034488; }
+          .b-basket .goods-buy a.bbuy-onclick:hover span:before {
+            color: #fff; }
+  .b-basket:hover .sub-basket {
+    opacity: 1;
+    z-index: 12; }
+    .b-basket:hover .sub-basket-empty {
+      opacity: 1;
+      z-index: 12; }
+  .b-basket:hover:before {
+    display: block; }
+
+.gipfel__contacts .page-header {
+  margin-right: -15px;
+  margin-left: -15px; }
+  .gipfel__contacts .page-header h1 {
+    text-align: left; }
+
+.gipfel__contacts .flex {
+  width: 100%;
+  display: flex;
+  margin-top: 3rem; }
+
+.gipfel__contacts .contacts_left {
+  width: 270px;
+  margin-right: 30px; }
+
+.gipfel__contacts .contacts_right {
+  width: 100%; }
+
+.gipfel__contacts .fourb {
+  display: flex;
+  flex-wrap: wrap; }
+
+.gipfel__contacts .store_property {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(223, 223, 223, 0.5);
+  padding: 2rem 0; }
+  .gipfel__contacts .store_property span[class^="icon-"] {
+    font-size: 21px;
+    height: 30px;
+    display: flex;
+    align-items: center; }
+    .gipfel__contacts .store_property span[class^="icon-"]:before {
+      color: #034488; }
+  .gipfel__contacts .store_property .title {
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 14px;
+    margin-top: 0.25rem;
+    font-family: "Proxima Nova Rg";
+    margin-bottom: 0.25rem; }
+  .gipfel__contacts .store_property .value {
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333; }
+    .gipfel__contacts .store_property .value span {
+      color: #e74242; }
+  .gipfel__contacts .store_property a {
+    display: block;
+    line-height: 27px;
+    font-size: 18px;
+    color: #034488; }
+
+.gipfel__contacts blockquote {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 50% 50%; }
+  .gipfel__contacts blockquote p {
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(51, 51, 51, 0.8);
+    font-family: "Proxima Nova Rg";
+    margin-bottom: 0; }
+    .gipfel__contacts blockquote p:nth-child(1) {
+      grid-column-start: 1;
+      grid-column-end: 2; }
+    .gipfel__contacts blockquote p:nth-child(2) {
+      grid-column-start: 1;
+      grid-column-end: 2; }
+    .gipfel__contacts blockquote p:nth-child(3) {
+      grid-column-start: 1;
+      grid-column-end: 2; }
+    .gipfel__contacts blockquote p:nth-child(4) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 4; }
+    .gipfel__contacts blockquote p span {
+      font-weight: 800; }
+
+.contacts .form_container {
+  background: #f9fafb;
+  padding: 3rem 2rem 3rem 2rem; }
+
+.contacts .form_container h1 {
+  font-size: 26px;
+  line-height: 26px;
+  color: #333333;
+  margin-bottom: 2rem; }
+
+.contacts .form_container .form-gap {
+  height: 100%;
+  width: 0.5rem;
+  background: transparent; }
+
+.contacts .form_container .form-gap:before {
+  content: '';
+  display: block;
+  background: transparent;
+  width: 100%;
+  height: 100%; }
+
+.input-fields {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+
+.input-fields > div {
+  width: 48%;
+  height: inherit; }
+
+.input-fields div:nth-child(2) div {
+  height: 100%; }
+
+.catalog-submenu {
+  padding: 0;
+  background: transparent; }
+
+.gipfel-form-item {
+  display: flex;
+  flex-direction: column; }
+
+.gipfel-form-item:first-of-type {
+  margin-bottom: 1rem; }
+
+.gipfel-form-item:nth-of-type(2) {
+  margin-bottom: 1rem; }
+
+.gipfel-form-item label {
+  margin-left: 1rem;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.8);
+  font-family: "Proxima Nova Rg"; }
+
+.gipfel-form-item input {
+  border-radius: 20px;
+  height: 40px;
+  padding: 0 1rem;
+  border: 1px solid rgba(3, 68, 136, 0.5);
+  font-size: 18px;
+  color: #333333;
+  font-family: "Proxima Nova Rg";
+  transition: 0.2s linear;
+  background: transparent; }
+
+.gipfel-form-item input:focus {
+  border: 1px solid #034488; }
+
+.gipfel-form-item input:focus {
+  outline: none; }
+
+.gipfel-form-item textarea {
+  border-radius: 20px;
+  border: 1px solid rgba(3, 68, 136, 0.5);
+  font-size: 18px;
+  font-family: "Proxima Nova Lt";
+  color: #00364e;
+  resize: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  background: transparent; }
+
+.gipfel-form-item textarea:focus {
+  border: 1px solid #034488;
+  outline: none; }
+
+.gipfel-policy {
+  margin: 0.75rem 0;
+  display: flex;
+  justify-content: flex-end; }
+
+.gipfel-policy label {
+  color: #b6b5b5;
+  background: transparent;
+  font-size: 14px;
+  width: 60%;
+  text-align: right;
+  margin-bottom: 0;
+  font-family: "Proxima Nova Rg"; }
+
+.gipfel-policy label a {
+  color: #034488;
+  font-family: "Proxima Nova Rg";
+  font-size: 14px; }
+
+.gipfel-send {
+  background: #034488;
+  border: 1px solid #034488;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  height: 40px;
+  font-size: 16px;
+  font-family: "Proxima Nova Lt";
+  border: none;
+  border-radius: 20px;
+  margin: 0 0 0 auto;
+  transition: 0.2s linear;
+  cursor: pointer;
+  padding: 0 1.25rem; }
+
+.gipfel-send:hover {
+  background: transparent;
+  border: 1px solid rgba(3, 68, 136, 0.5);
+  color: #034488; }
+
+@media (max-width: 768px) {
+  .gipfel__contacts .page-block {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-bottom: 1.5rem; }
+  .gipfel__contacts .contacts_left {
+    display: none; }
+  .gipfel__contacts .page-header {
+    padding-top: 1rem; }
+    .gipfel__contacts .page-header h1 {
+      text-align: center; }
+  .gipfel__contacts .flex {
+    margin-top: 1rem; }
+  .gipfel__contacts .contacts_map {
+    margin-left: -15px;
+    margin-right: -15px; }
+  .gipfel__contacts .store_property {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 7.5% 90%;
+    grid-column-gap: 2.5%;
+    width: 100%; }
+    .gipfel__contacts .store_property .value {
+      font-size: 16px;
+      line-height: 22px; }
+    .gipfel__contacts .store_property .title {
+      display: none; }
+    .gipfel__contacts .store_property span[class^="icon-"] {
+      align-items: flex-start; }
+    .gipfel__contacts .store_property a {
+      line-height: 1;
+      margin-bottom: 10px; }
+  .gipfel__contacts blockquote {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column; }
+  .gipfel__contacts .form_container {
+    padding: 1.5rem 1rem;
+    margin-left: -15px;
+    margin-right: -15px; }
+    .gipfel__contacts .form_container h1 {
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 1rem; }
+  .input-fields {
+    flex-direction: column; }
+    .input-fields > div {
+      width: 100%; }
+  .gipfel-form-item {
+    margin-bottom: 1rem; }
+    .gipfel-form-item input {
+      height: 36px;
+      font-size: 16px; }
+    .gipfel-form-item textarea {
+      height: 36px;
+      font-size: 16px; }
+  .gipfel-policy {
+    margin: 0 0 0.5rem 0; }
+    .gipfel-policy label {
+      width: 100%;
+      text-align: left;
+      font-size: 13px; }
+      .gipfel-policy label a {
+        font-size: 13px; }
+  .gipfel-send {
+    height: 36px;
+    width: 100%;
+    margin-top: 1rem; } }

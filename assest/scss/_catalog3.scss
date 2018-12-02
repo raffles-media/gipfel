@@ -1,0 +1,218 @@
+.gipfel__catalog3 {
+    .catalog3-allGoods {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .catalog-menu {
+        margin-left: -15px;
+    }
+    
+    .page-block {
+        margin-left: -50px;
+        margin-right: -50px;
+        padding: 50px 0;
+    }
+    .catalog-header {
+        margin: 0 0 2.5rem 0;
+        h2 {
+            font-size: 32px;
+            color: $font-regular;
+            a {
+                font-size: 32px;
+                color: $font-regular;
+            }
+        }
+    }
+    .main__goods--item {
+        width: 33.3%;
+    }
+    .main__goods--items.main__goods--list .main__goods--item {
+        grid-template-columns: 35% 40% 25%;
+    }
+}
+.main__goods--items {
+    justify-content: flex-start;
+}
+
+
+
+
+.catalog-content {
+    margin-top: 2rem;
+}
+
+.catalog-menu {
+    padding: 0;
+    background: #f9fafb;
+}
+
+.catalog-menu-item {
+    border-top: 1px solid rgba(206, 209, 212, 0.4);
+    border-bottom: 1px solid rgba(206, 209, 212, 0.4);
+    margin-top: -1px;
+    .menu-title {
+        font-size: 16px;
+        color: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        transition: $transition-def;
+        background: #f3f6fa;
+        span {
+            font-size: 9px;
+            transition: $transition-def;
+            transform: rotate(-180deg);
+            &:before {
+                color: #333333;
+            }
+        }
+        &.collapsed {
+            background: transparent;
+            span {
+                transform: rotate(0);
+            }
+        }
+    }
+}
+
+.catalog-submenu {
+    padding: 0 1.5rem 1rem 1.5rem;
+    background: #f3f6fa;
+    .checkbox {
+        display: none;
+        transition: $transition-def;
+    }
+
+    .checkbox + label {
+        transition: $transition-def;
+        padding-left: 33px;
+        position: relative;
+        cursor: pointer;
+        line-height: 24px;
+        margin-bottom: 1rem;
+        width: 100%;
+        transition: 0.2s linear;
+        color: $font-regular;
+        display: block;
+        font-size: 14px;
+        font-family: "Proxima Nova Rg";
+        span {
+            transition: $transition-def;
+            color: rgba(3, 68, 136, 0.5);
+            margin-left: 0.5rem;
+            padding: 0.15rem 0.5rem;
+            border: 1px solid rgba(3, 68, 136, 0.5);
+            border-radius: 10px;
+            line-height: 1;
+            font-size: 13px;
+        }
+        &:hover {
+            color: $font-regular;
+            cursor: pointer;
+            span {
+                color: rgba(0, 54, 78, 0.6);
+            }
+            &:before {
+                background: rgba(3, 68, 136, 0.2);
+            }
+        }
+    }
+    
+    
+
+    .checkbox + label:before {
+        transition: $transition-def;
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        margin-right: .7em;
+        border: 1px solid rgba(3, 68, 136, 0.5);
+        background-color: #fafafa;
+        width: 24px;
+        height: 24px;
+        top: 0;
+        border-radius: 5px;
+        background-color: transparent;
+        /* -webkit-box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.25); */
+        box-shadow: none;
+    }
+
+    .checkbox + label:after {
+        transition: $transition-def;
+        content: '';
+        display: none;
+        position: absolute;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        top: 5px;
+        width: 18px;
+        height: 9px;
+        left: 3px;
+        border: 1.3px solid #fff;
+        border-top: none;
+        border-right: none;
+        -webkit-transform: rotate(-50deg);
+        transform: rotate(-50deg);
+    }
+    
+    .checkbox:checked + label {
+        font-weight: 600;
+        span {
+            font-weight: 400;
+        }
+    }
+
+    .checkbox:checked + label:after {
+        display: inline-block;
+    }
+
+    .checkbox:checked + label:before  {
+        background: $font-regular;
+        border: 1px solid rgba(3, 68, 136, 1);
+    }
+}
+
+.catalog-submenu--more {
+    display:none;
+}
+
+.catalog-submit-form {
+    @extend .d-flex;
+    justify-content: space-around;
+    padding: 1rem 0 1.5rem 0;
+    button {
+        cursor: pointer;
+        font-size: 16px;
+        font-family: "Proxima Nova Lt";
+        padding: 0;
+        border-color: 0;
+        border:none;
+        background: transparent;
+        &:focus {
+            outline: none;
+        }
+        &.catalog-submit {
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+            background: $font-regular;
+            border: 1px solid $font-regular;
+            color: #fff;
+            transition: $transition-def;
+            &:hover {
+                background: transparent;
+                color: $font-regular;
+                border: 1px solid rgba(3, 68, 136, 0.5);
+            }
+        }
+        &.catalog-clear {
+            color: rgba(3, 68, 136, 0.5);
+            transition: $transition-def;
+            &:hover {
+                color: rgba(3, 68, 136, 0.5);
+            }
+        }
+    }
+}
+

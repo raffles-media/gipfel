@@ -1,0 +1,21 @@
+.news-page {
+    .news-page-content {
+        margin-right: -50px;
+        margin-left: -50px;
+        background: #fff;
+        padding-bottom: 3rem;
+        h4 {         
+            padding: 3rem 0;
+            margin-bottom: 0;
+            font-size: 32px;
+            color: $font-regular;
+            text-align: center;
+        }
+    }
+    .news__content {
+        flex-wrap: wrap;
+        .news-item {
+            margin-top: -1px;
+        }
+    }
+}

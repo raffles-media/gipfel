@@ -1,0 +1,167 @@
+.fhead-content {
+    padding-top: 55px;
+    background: #424f60;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-bottom: 55px;
+}
+
+.footer-social {
+    @extend .d-flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin-top: 1.75rem;
+    span {
+        width: 35px;
+        height: 35px;
+        background: transparent;
+        border-radius: 50%;
+        border: 1px solid rgba(236, 244, 255, 0.5);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5rem 0.5rem 0 0;
+        transition: $transition-def;
+        &:before {
+            color: rgba(236, 244, 255, 1);
+            transition: $transition-def;
+        }
+        &.icon-vk {
+            &:hover {
+                background: #507299;
+                border: 1px solid #424f60;
+                &:before {
+                    color: #fff;
+                }
+            }
+        }
+        &.icon-fb {
+            &:hover {
+                background: rgba(22,95,142,.88);
+                border: 1px solid #424f60;
+                &:before {
+                    color: #fff;
+                }
+            }
+        }
+        &.icon-ok {
+            &:hover {
+                background: #f58220;
+                border: 1px solid #424f60;
+                &:before {
+                    color: #fff;
+                }
+            }
+        }
+        &.icon-insta {
+            &:hover {
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                border: 1px solid #424f60;
+                &:before {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.footer-links {
+    h4 {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+    p {
+        margin-bottom: 0;
+        margin-bottom: 0.5rem;
+        a {
+            font-size: 15px;
+            line-height: 15px;
+            color: #ecf4ff;
+            transition: $transition-def;
+            display: inline-flex;
+            align-items: center;
+            span {
+                font-size: 20px;
+                margin-right: 0.5rem;
+                &:before {
+                    transition: $transition-def;
+                    color: #ecf4ff;
+                }
+            }
+            &:hover {
+                color: rgba(255, 255, 255, 1);
+                span.icon-mail:before, span.icon-phone:before {
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+}
+
+.order-call {
+    a { 
+        height: 40px;
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid rgba(236, 244, 255, 0.5);
+        margin-bottom: 0;
+        @extend .d-flex;
+        justify-content: center;
+        transition: $transition-def;
+        &:hover {
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+.fbody-content {
+    background: #404d5d;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.fbody-content-info {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        margin-bottom: 0;
+        font-size: 15px;
+        color: #ecf4ff;
+        transition: $transition-def;
+        a {
+            color: #ecf4ff;
+            font-size: 15px;
+            border-bottom: 1px solid transparent;
+            transition: $transition-def;
+            &:hover {
+                color: #fff;
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+    div {
+        display: flex;
+        align-items: center;
+        width: 180px;
+        justify-content: space-between;
+    }
+    span.icon-visa {
+        font-size: 60px;
+    }
+    span.icon-maestro {
+        font-size: 40px;
+    }
+    span.icon-mastercard {
+        font-size: 49px;
+        position: relative;
+        right: -3px;
+        top: 4px;
+    }
+    .icon-mastercard .path2:before {
+        margin: 0;
+    }
+}
